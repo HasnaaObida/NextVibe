@@ -15,9 +15,9 @@ export default function AboutPage() {
             Chez NextVibe Studio, nous aidons les entreprises à se démarquer grâce à des expériences digitales modernes, performantes et durables.
           </p>
         </div>
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[120%] h-full pointer-events-none opacity-20">
+        <div className="absolute inset-0 opacity-20">
           <Image
-            src="/images/Top-10-agence-marketing-digital-scaled.jpg"
+            src="/images/annie-spratt-sggw4-qDD54-unsplash.jpg"
             alt=""
             fill
             className="object-cover"
@@ -26,15 +26,15 @@ export default function AboutPage() {
       </section>
 
       {/* NOTRE HISTOIRE */}
-      <section className="py-28 bg-gray-50">
+      <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
           {/* IMAGE */}
           <div className="relative group overflow-hidden rounded-3xl shadow-xl">
             <Image
-              src="/images/Top-10-agence-marketing-digital-scaled.jpg"
+              src="/images/Blog copernic6.webp"
               alt="Notre histoire"
               width={800}
-              height={600}
+              height={700}
               className="object-cover w-full h-[420px] transition-transform duration-500 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-50 transition" />
@@ -74,7 +74,7 @@ export default function AboutPage() {
       </section>
 
       {/* NOS VALEURS */}
-      <section className="py-24">
+      <section className="py-22">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-12">
             Nos valeurs
@@ -96,15 +96,6 @@ export default function AboutPage() {
 
       {/* CTA (STYLE HOMEPAGE) */}
       <section className="py-24 text-center relative overflow-hidden">
-        {/* Image de fond */}
-        <div className="absolute inset-0 opacity-10">
-          <Image
-            src="/images/cta-bg.jpg"
-            alt=""
-            fill
-            className="object-cover"
-          />
-        </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 bg-gradient-to-r from-indigo-50 via-white to-purple-50 rounded-3xl py-16 shadow-lg">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">

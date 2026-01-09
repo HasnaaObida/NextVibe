@@ -2,7 +2,7 @@
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-28 px-4">
+    <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-24 px-4">
       <div className="max-w-7xl mx-auto space-y-20">
 
         {/* HEADER TEXTE */}
@@ -39,12 +39,12 @@ export default function ContactPage() {
           <div
             className="relative rounded-3xl overflow-hidden shadow-2xl"
             style={{
-              backgroundImage: "url('/images/agence-marketing-digital.jpeg')",
+              backgroundImage: "url('/images/labib-jaffar-ylx85nvunvw-unsplash.jpg')",
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }}
           >
-            <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
+            <div className="absolute inset-0 bg-black/30 backdrop-blur-[1px]" />
 
             <form
               onSubmit={(e) => e.preventDefault()}

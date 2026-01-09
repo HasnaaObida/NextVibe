@@ -4,20 +4,18 @@ import Image from "next/image";
 export default function Services() {
   return (
     <main className="bg-white text-gray-900">
-
       {/* ================= HERO SERVICES ================= */}
       <section className="relative py-32 bg-gray-50 overflow-hidden">
         {/* Image de fond décorative */}
         <div className="absolute inset-0 opacity-20">
           <Image
-            src="/images/Top-10-agence-marketing-digital-scaled.jpg"
+            src="/images/annie-spratt-sggw4-qDD54-unsplash.jpg"
             alt=""
             fill
             className="object-cover"
           />
         </div>
-
-        <div className="relative max-w-7xl mx-auto px-6 text-center">
+        <div className="max-w-5xl mx-auto px-6 text-center">
           <h1 className="text-5xl md:text-6xl font-extrabold mb-6 text-gray-900">
             Des solutions complètes pour votre succès
           </h1>
@@ -111,17 +109,6 @@ export default function Services() {
 
       {/* ================= CTA ================= */}
       <section className="relative py-24 text-center overflow-hidden rounded-3xl mx-6 md:mx-16">
-
-        {/* Background image */}
-        <div className="absolute inset-0 opacity-10">
-          <Image
-            src="/images/cta-bg.jpg"
-            alt=""
-            fill
-            className="object-cover rounded-3xl"
-          />
-        </div>
-
         <div className="relative z-10 max-w-4xl mx-auto px-6 bg-gradient-to-r from-indigo-50 via-white to-purple-50 rounded-3xl py-16 shadow-lg">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
             Prêt à lancer votre projet ?

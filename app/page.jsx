@@ -7,13 +7,12 @@ export default function HomePage() {
     <main className="bg-white text-gray-900">
 
       {/* ================= HERO ================= */}
-      <section className="py-32 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+      <section className="relative bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center pt-28 md:pt-32 pb-28">
 
           {/* TEXTE */}
-          <div>
-            <span className="inline-block bg-indigo-50 text-indigo-600 px-4 py-1
-                             rounded-full text-sm font-medium mb-4">
+          <div className="relative z-10">
+            <span className="inline-block bg-indigo-50 text-indigo-600 px-4 py-2 rounded-full text-sm font-medium mb-4">
               Agence digitale moderne
             </span>
 
@@ -29,16 +28,14 @@ export default function HomePage() {
             <div className="flex gap-4 flex-wrap">
               <Link
                 href="/contact"
-                className="bg-indigo-600 text-white px-8 py-4 rounded-xl font-medium
-                           hover:bg-indigo-500 transition"
+                className="bg-indigo-600 text-white px-8 py-4 rounded-xl font-medium hover:bg-indigo-500 transition"
               >
                 Démarrer un projet
               </Link>
 
               <Link
                 href="/service"
-                className="border border-gray-300 px-8 py-4 rounded-xl font-medium
-                           hover:bg-gray-100 transition"
+                className="border border-gray-300 px-8 py-4 rounded-xl font-medium hover:bg-gray-100 transition"
               >
                 Nos services
               </Link>
@@ -46,19 +43,17 @@ export default function HomePage() {
           </div>
 
           {/* IMAGE */}
-          <div className="relative group rounded-3xl overflow-hidden shadow-2xl h-[420px]">
+          <div className="relative group rounded-3xl overflow-hidden shadow-2xl h-[420px] md:h-[480px] -mt-12 md:-mt-16">
 
-            {/* Glow / blur derrière l'image */}
             <div className="absolute -inset-4 bg-indigo-100 rounded-3xl blur-2xl opacity-40 transition-opacity duration-500 group-hover:opacity-50"></div>
 
             <Image
-              src="/images/fe1a40a0-c175-4c17-a2d6-2e2d94ee46f3-1024x683.webp"
+              src="/images/austin-distel-wawEfYdpkag-unsplash.jpg"
               alt="NextVibe banner"
               fill
               className="object-cover rounded-3xl transition-transform duration-500 group-hover:scale-105"
             />
 
-            {/* Overlay gradient au hover */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-50 transition-opacity duration-500 rounded-3xl"></div>
 
           </div>
@@ -66,7 +61,7 @@ export default function HomePage() {
       </section>
 
       {/* ================= STATS ================= */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
@@ -77,8 +72,7 @@ export default function HomePage() {
             ].map((stat, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl p-6 shadow-sm
-                           hover:shadow-md transition"
+                className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition"
               >
                 <h3 className="text-4xl font-bold text-indigo-600 mb-2">
                   {stat.value}
@@ -93,7 +87,7 @@ export default function HomePage() {
       </section>
 
       {/* ================= SERVICES ================= */}
-      <section className="py-24">
+      <section className="py-16">
         <div className="max-w-6xl mx-auto px-6">
 
           <div className="text-center mb-14">
@@ -125,8 +119,7 @@ export default function HomePage() {
             ].map((service, index) => (
               <div
                 key={index}
-                className="group bg-white p-8 rounded-2xl border border-gray-100
-                           hover:shadow-xl hover:-translate-y-1 transition"
+                className="group bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition"
               >
                 <div className="w-12 h-12 flex items-center justify-center rounded-xl
                                 bg-indigo-50 text-indigo-600 mb-5
@@ -149,19 +142,10 @@ export default function HomePage() {
       </section>
 
       {/* ================= CTA ================= */}
-      <section className="relative py-24 bg-gradient-to-r from-indigo-50 via-white to-purple-50 text-center overflow-hidden rounded-3xl mx-6 md:mx-16">
-        
-        {/* Overlay image décorative */}
-        <div className="absolute inset-0 opacity-10">
-          <Image
-            src="/images/cta-bg.jpg"
-            alt=""
-            fill
-            className="object-cover rounded-3xl"
-          />
-        </div>
+      <section className="relative py-16 text-center overflow-hidden rounded-3xl mx-6 md:mx-16">
 
-        <div className="relative z-10 max-w-4xl mx-auto px-6">
+
+        <div className="relative z-10 max-w-4xl mx-auto px-6 bg-gradient-to-r from-indigo-50 via-white to-purple-50 rounded-3xl py-16 shadow-lg">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
             Prêt à lancer votre projet ?
           </h2>
@@ -170,8 +154,7 @@ export default function HomePage() {
           </p>
           <Link
             href="/contact"
-            className="inline-block bg-indigo-600 text-white px-10 py-4 rounded-xl font-medium
-                       hover:bg-indigo-500 hover:scale-105 transition-transform shadow-lg"
+            className="inline-block bg-indigo-600 text-white px-10 py-4 rounded-xl font-medium hover:bg-indigo-500 hover:scale-105 transition-transform shadow-lg"
           >
             Nous contacter
           </Link>
